@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+/* div {
+  background: tomato;
+  width: 100px;
+  margin: 20px;
+  padding: 20px;
+} */
+
+span {
+  background: turquoise;
+  width: 100px;
+  height: 50px;
+  display: inline;
+
+  /* 위, 아래에는 margin 값을 가질 수 없다 */
+}
