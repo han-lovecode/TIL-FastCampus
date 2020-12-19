@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>imagTagLecture</title>
+    <link rel="stylesheet" href="style_image.css">
+    
+        
+</head>
+<body>    
+    <img
+        srcset="images/heropy_small.png 400w,
+                images/heropy_medium.png 700w,
+                images/heropy_large.png 1000w"
+                sizes="500px"  
+        src="images/heropy.png"
+        alt="HEROPY"/> 
+
+
+    <audio src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3" controls autoplay loop muted></audio>
+ 
+    <video src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+        controls
+        autoplay
+        loop
+        muted
+        poster="./images/mymimoji.JPG">
+    </video>
+
+    <!-- poster로 썸네일을 추가할때에는 autoplay기능은 제거해야함!! -->
+
+    <p>포기하지 않으면 꼭 이룰 수 있어!!!</p>
+    <div>
+        <img src="./images/mymimoji.JPG" alt="송이의미모지">
+    </div>
+
+
+    <div>
+        <iframe src="https://nomadcoders.co/" 
+            frameborder="0"
+            width="70%" 
+            height="400px"
+            style="border:4px solid red"
+            sandbox="">
+        </iframe>
+        <iframe width="1524" height="606" src="https://www.youtube.com/embed/bKIkmUaG44o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </div>
+
+
+    <figure>
+        <img src="./images/mymimoji.JPG" alt="lovecode">
+        <figcaption>lovecode 이미지입니다!</figcaption>
+    </figure>
+
+    <canvas id="canvas" width="200" height="150"></canvas>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle ='rgb(200, 0, 0)';
+        ctx.fillRect (10, 10, 50, 50);
+        ctx.fillStyle = "rgba(0, 0, 200, 0.5)";
+        ctx.fillRect (30, 30, 50, 50);
+    </script>
+
+
+    <script defer src="./js/main.js">
+        console.log("hello");
+    </script>
+    <div id="my-name">LOVECODE</div> 
+
+    <!-- my-name div를 읽을 수 있는 이유는 script 안에 있는 defer라는attribute 때문에 가능!1 -->
+
+    안녕하세요
+    <noscript>
+        자바스크립트를 지원하지 않는 환경입니다.
+    </noscript>
+    <!-- noscript.html 참조해야 이해가능함 -->
+    
+</body>
+</html>

@@ -1,4 +1,4 @@
-/* a {
+a {
   font-weight: bold;
   width: 100px;
   line-height: 40px;
@@ -10,11 +10,11 @@
 }
 a:hover {
   background: tomato;
-} */
+}
 
-/* h2 {
+h2 {
   padding-bottom: 1000px;
-} */
+}
 
 b {
   font-weight: normal;

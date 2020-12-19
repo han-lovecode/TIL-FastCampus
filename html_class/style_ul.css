@@ -2,12 +2,12 @@ body {
   margin: 0;
   padding: 0;
 }
-/* div {
+div {
   background: tomato;
   width: 100px;
   margin: 20px;
   padding: 20px;
-} */
+}
 
 span {
   background: turquoise;
