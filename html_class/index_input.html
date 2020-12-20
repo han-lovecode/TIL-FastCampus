@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>input 태그</title>
+</head>
+<body>
+    <form action="./login" id="login-form" method="GET" autocomplete="on">
+        <input type="email" name="id" value="1234" readonly>
+        <input type="password" name="pw" disabled>
+        <input type="submit" value="로그인">
+        <input type="number"  placeholder="숫자를입력하세염" max="6" min="4" >
+        <input type="number"  placeholder="숫자를입력하세염" step="6">
+
+        <input type="checkbox" checked>
+
+        <input type="file" multiple>
+
+        <input type="image" src="./mymimoji.JPG" alt="LOVECODE">
+        <!-- 이미지가 submit 버튼이 될 수 있다.(form의 method.att를 통해) -->
+
+        <input type="radio" name="radio1" checked>
+        <input type="radio" name="radio2">
+        <input type="radio" name="radio1">
+        <!-- att.name을 동일하게 해야 하나의 범주에서 선택의 선택지가 된다 -->
+
+        <input type="text" name="id">
+        <input type="password" name="pw">
+        <input type="submit" value="로그인">
+        <input type="reset" value="초기화">
+        <!-- type.reset은 동일한 form의 영향을 받는 input들에게만 영향을 미친다. 하위 input은 form이라는 input.att로 연결되어 있어서 영향을 받아 같이 초기화 됨 -->
+
+
+    </form>
+    
+    <input type="text" form="login-form"  maxlength="10" >
+    <!-- 상위 form의 설정값이 input의 att.form을 통해서 잘 적용되는데 autocomplete가 잘안됨. 뭐지?? -->
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>option 태그</title>
+</head>
+<body>
+    <select>
+        <optgroup label="Coffee">
+          <option>Americano</option>
+          <option>Caffe Mocha</option>
+          <option label="Cappuccino" value="Cappuccino"></option>
+        </optgroup>
+        <optgroup label="Latte" disabled>
+          <option>Caffe Latte</option>
+          <option>Vanilla Latte</option>
+        </optgroup>
+        <optgroup label="Smoothie">
+          <option>Plain</option>
+          <option>Strawberry</option>
+          <option>Banana</option>
+          <option>Mango</option>
+        </optgroup>
+    </select>
+
+    <select name="Fruit" size="3" multiple>
+        <optgroup label="redFruit" disabled>
+            <option label="Apple" value="Apple"></option>
+            <option label="Berry" value="Berry">
+            <option>Orange</option>
+        </optgroup>
+
+        <optgroup label="notRedFruit">
+            <option value="">Banana</option>
+            <option value="">Mango</option>
+            <option value="">Pear</option>
+        </optgroup>
+    </select>
+</body>
+</html>
