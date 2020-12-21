@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>data, draggable 태그</title>
+</head>
+<body>
+    <div id="me" data-my-nickname="han" data-my-age="32">HAN</div>
+
+    <div draggable="false">The element to drag</div>
+
+    <script>
+        const me = document.getElementById('me');
+        console.log(me.dataset.myNickname);
+        console.log(me.dataset.myAge);
+    </script>
+    
+</body>
+</html>
