@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>disply 속성</title>
+    <style>
+        div {  
+            width : 200px;
+            height : 200px;
+            background : tomato;
+            display : flex;
+            justify-content: center;
+            align-items : center;
+        } 
+        div.hide {display:none;}
+    </style>
+</head>
+<body>
+    <button>Toggle</button>
+    <div>요소</div>
+    
+    <script>
+        const el = document.querySelector('div');
+        const btn = document.querySelector('button');
+        btn.addEventListener('click', function(){
+            if (el.classList.contains('hide')) {
+                el.classList.remove('hide');
+            } else {
+                el.classList.add('hide');
+            }
+        })
+    </script>
+</body>
+</html>
