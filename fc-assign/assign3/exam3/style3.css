@@ -1,0 +1,17 @@
+.container{
+    background-color: green;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+.box{
+    background-color: orange;
+    
+    
+}
+.container,
+.box {
+    width: 200px;
+    height: 200px;
+
+}

@@ -1,0 +1,15 @@
+.container{
+    width: 800px;
+    height: 500px;
+    background:tomato;
+}
+.box {
+    width: 200px;
+    height: 200px;
+    background:turquoise;
+    margin: 75%;
+}
+.container,
+.box {
+    border : 1px solid;
+}
