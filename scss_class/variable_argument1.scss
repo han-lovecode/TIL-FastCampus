@@ -1,0 +1,16 @@
+@mixin var ($w,$h,$bg...) {
+    width: $w;
+    height: $h;
+    background: $bg;
+}
+.box {
+    @include var(
+    100px, 
+    200px, 
+    url("image/a.png") no-repeat 10px 20px,
+    url("image/b.png") no-repeat,
+    url("image/c.png")
+    );
+}
+// ...을 붙인 매개변수는 가변하는 인수의 갯수를 
+// 특정한 매개변수에 몰아줄 수 있다

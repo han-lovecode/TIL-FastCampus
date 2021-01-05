@@ -1,0 +1,11 @@
+@mixin dash-line($width:1px, $color:black) {
+    border:$width dashed $color;
+}
+
+.box1 {@include dash-line;}
+.box2 {@include dash-line(blue); }
+// 매개변수의 순서대로 인수를 적용한다.
+// 따라서 위에 코드는 결론적 오류임, 
+// blue가 width 값으로 들어간다
+.box2 {@include dash-line($color:blue); }
+// 키워드 인수로 정확하게 전달 해야함.

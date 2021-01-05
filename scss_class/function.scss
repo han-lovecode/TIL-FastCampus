@@ -1,0 +1,20 @@
+// Function 연산된 특정 값을 return 한다
+// 인수가 없더라도 꼭 괄호를 꼭 열고 닫아라
+@function columns($number: 1, $columns: 12, $width: 1200px){
+    @return $width * ($number / $columns);
+}
+
+.container {
+    $width: 1200px;
+    width:$width;
+    .item:nth-child(1) {
+        width : columns();
+    }
+    .item:nth-child(2) {
+        width : columns(8);
+    }
+    .item:nth-child(3) {
+        width : columns(3);
+    }
+    // 키워드 변수 사용시 기본값 지정??
+}

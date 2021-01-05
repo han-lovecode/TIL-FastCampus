@@ -1,0 +1,20 @@
+@mixin icon($url) {
+    &::after{
+        content: $url;
+        @content;
+    }
+}
+
+.box1 {
+    @include icon ("image/icon1.png");
+}
+.box2 {
+    @include icon ("image/icon2.png") {
+        display:block;
+        position:absolute;
+        width:100px;
+        height:100px;
+    };
+}
+// content로 들어갈 내용이 없으면 아무것도 정의되지 않음
+// 추가적으로 삽입하고자 하는 특정한CSS 코드 블록을 추가할 수 있다.

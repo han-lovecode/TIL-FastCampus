@@ -1,0 +1,10 @@
+// 조건과 반복 (Control Directive / Expresstions)
+// if 함수, 조건부 삼항 연산자와 매우 비슷
+// 조건 ? 참이면 실행 : 거짓이면 실행
+// if (조건, 표현식1, 표현식2)
+// null 값을 사용하지 않겠다.
+$w : 301px;
+div {
+    width : if($w > 300px,$w, null);
+    height : 100px;
+}

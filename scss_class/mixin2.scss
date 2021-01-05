@@ -1,0 +1,20 @@
+@mixin large-text{
+    font: {
+        size:22px;
+        weight:bold;
+        family:sans-serif;
+    }
+    color:orange;
+    &::after {
+        content:"!!";
+    }
+    span.icon {
+        background : url('/images/icon.png');
+    }
+}
+.box1{
+    @include large-text;
+}
+.box2{
+    @include large-text;
+}

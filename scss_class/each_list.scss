@@ -1,0 +1,15 @@
+// @each, List(배열과비슷)와 Map(객체랑비슷)
+// for in문과 비슷
+$fruits: (apple, orange, banana, mango);
+// ()괄호 없어도 됨
+.fruits {
+    @each $fruit in $fruits {
+        $index: index($fruits, $fruit);
+        // index() : 내장함수, 몇번째가 반복중이냐?를 알 수 있음
+        li:nth-chile(#{$index}) {
+            left:50px * $index;
+            background : url("/images/#{$fruit}.png");
+            
+        }
+    }
+}

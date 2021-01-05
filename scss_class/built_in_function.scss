@@ -1,0 +1,24 @@
+내장함수(Built-in Functions)_HEROPY 블로그 함수 정리표 보기
+- []는 선택 가능한 인수
+- zero-based numbering을 하지 않는다.(0부터 사용하지 않음)
+- 다 외울 수 없으니 찾아가면서 써라, 이런게 있다 정도만 알아 둘 것.
+
+[[색상(RGB / HSL / Opacity) 내장함수]]
+mix($color1, $color2)
+-> 대괄호가 아니니까 꼭 필요한 인수라는 뜻!!!
+rgba($color, $alpha) -> css도 유사한 함수 있음 rgba(r,g,b,a) 인수 4개필요
+-> 자주쓰는 함수
+opacify($color, $amount) / fade-in($color, $amount) 기능 같은 데 이름만 다름
+-> 색을 더 불투명하게 만듬
+transparentize($color, $amount)  / fade-out($color, $amount) 기능 같은 데 이름만 다름
+-> 색을 더 투명하게 만듬
+
+[[문자함수 예시]]
+div {
+    width : str-insert("abcd", xxx, 4);
+    // abcd의 네번째 칸에 xxx를 넣겠다.
+    height: str-index("abcd", "c");
+    // abcd 중에서 c는 세번째에 위치에 있다
+    position: str-slice("abcd",3,-1);
+    // 세번째 인수, -1은 끝까지 라는 뜻이고, 생략가능
+}

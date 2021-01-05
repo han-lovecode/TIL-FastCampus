@@ -1,0 +1,14 @@
+// @for (키워드 : through, to, from)
+@for $index from 1 through 3 {
+    .through:nth-child(#{$index}){
+        width: 20px*$index;
+    }
+}
+@for $index from 1 to 3 {
+    .through:nth-child(#{$index}){
+        width:20px * $index;
+    }
+}
+// 변수는 #{} 문자보간으로 감싸서 작성
+// through 까지 반복한다
+// to 직전 까지만 반복한다

@@ -1,0 +1,15 @@
+@mixin size($w:100px,$h:100px) {
+    width:$w;
+    height:$h;
+}
+// 100px으로 기본값 지정해 놓음
+// 밖에서 따로 들어오는 값이 없으면 ()는 불필요
+.box1 {
+    @include size;
+}
+.box2 {
+    @include size($h:300px);
+}
+// 공통선언부 재활용하고 특정값 활용 가능
+.box3 {
+    @include size;
