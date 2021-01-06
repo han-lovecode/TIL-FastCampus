@@ -1,19 +1,19 @@
 .container{
     list-style: none;
 }
-.container li:first-child {
+.test1 {
     font-weight: 700;
 }
-.container li:nth-child(2) {
+.test2 {
     text-decoration:line-through;
 }
-.container li:nth-child(3) {
+.test3 {
     text-indent:100px;
 }
-.container li:nth-child(4) {
+.test4 {
     letter-spacing: 5px;    
 }
-.container li:last-child {
+.test5 {
     font-family: 'Courier New', Courier, monospace;
 }
 
