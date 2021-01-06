@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>부트스트랩</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        .col-sm-6, .col-sm-4, .col-md-4 {border : 1px solid tomato; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col-sm-6 col-md-4">첫번째</div>
+        <div class="col-sm-6 col-md-4">두번째</div>
+        <div class="col-sm-6 col-md-4">세번째</div>
+    <!-- [생각해보기]
+        768px 작을 때 1 - 모바일화면
+        768px 이상에서 2 -모바일화면
+        970px 이상에서 3 큰 디스플레이 -->
+    </div>
+    
+</body>
+</html>
+
+    <!-- [다 더하면 12개]
+        col-sm-@  class 작성시, @를 더한값이 12가 넘지 않는 범위만 한줄에 표시, window size가 768 이하가 되면 모두 세로로 표시됨
+
+        화면사이즈          표현
+        768px 보다 클때     col-sm-
+        970px ""            col-md-  
+        1170px ""           col-lg-
+        768px 보다 작을 때  col-xs- -->
+
