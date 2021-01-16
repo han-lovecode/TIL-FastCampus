@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+.container {
+  width: 500px;
+  background-color: #dfdfdf;
+  /* 코드 작성 */
+}
+
+.header {
+  background-color: pink;
+  width: 100%;
+}
+
+.header h1 {
+  padding: 20px 0;
+}
+
+.nav {
+  background-color: yellow;
+  width: 100%;
+}
+.nav_box {
+  display: flex;
+}
+
+.nav_item {
+  background-color: orange;
+  margin: 15px;
+  padding: 5px;
+}
+
+.join span {
+  background-color: #dfdfdf;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.join_box {
+  display: flex;
+  justify-content: space-around;
+  border: 3px #dfdfdf groove;
+  padding: 15px 10px;
+  margin: -10px 5px 2px 5px;
+}
+.join_box label {
+  background-color: skyblue;
+  padding: 5px;
+  width: auto;
+  height: auto;
+}
+
+.join_box input {
+  border: 2px #f1f1f1 groove;
+}
+
+.main_aside_box {
+  display: flex;
+}
+
+.main,
+.aside {
+  height: 300px;
+}
+
+.main {
+  background-color: lightGreen;
+  width: 350px;
+  padding: 10px;
+  /* 코드 작성 */
+
+  display: flex;
+}
+
+section {
+  width: 50%;
+  padding-top: 20px;
+}
+
+.section1 {
+  background-color: green;
+}
+
+.section2 {
+  background-color: khaki;
+}
+
+.aside {
+  background-color: coral;
+  width: 150px;
+}
+
+.footer {
+  background-color: lightGrey;
+  width: 100%;
+  height: 50px;
+}
