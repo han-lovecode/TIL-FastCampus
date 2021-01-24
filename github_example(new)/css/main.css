@@ -36,3 +36,31 @@
   color: #fff;
   background: #55a532 linear-gradient(#91dd70, #55ae2e);
 }
+
+/* INPUT TEXT */
+.input--text {
+  height: 34px;
+  padding: 0 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  outline: none;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+  font-size: 16px;
+}
+.input--text:focus {
+  border-color: #51a7e8;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075),
+    0 0 5px rgba(81, 167, 232, 0.5);
+  /*   쉽표를 써서 안쪽 바깥쪽 그림자 모두 적용하기위함 */
+}
+/* vendor Prefix (브라우저 업체별 접두사) : 표준X, 실험적인 기능들을 가능하게하는 접두어 */
+.input--text::-webkit-input-placeholder {
+  color: #cacaca;
+}
+.input--text::-ms-input-placeholder {
+  color: #cacaca;
+}
+.input--text::-moz-input-placeholder {
+  color: #cacaca;
+}
