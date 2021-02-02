@@ -1,0 +1,40 @@
+.container {
+  width: 400px;
+  position: relative;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+.item:nth-child(1) {
+  background-color: pink;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+}
+
+.item:nth-child(2) {
+  background-color: yellow;
+}
+
+.item:nth-child(3) {
+  background-color: lightGreen;
+}
+
+.item:nth-child(4) {
+  background-color: skyBlue;
+  position: absolute;
+  top: 100px;
+}
+
+.item:nth-child(5) {
+  background-color: lightGrey;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
