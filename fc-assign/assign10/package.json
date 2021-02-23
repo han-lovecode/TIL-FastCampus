@@ -1,0 +1,34 @@
+{
+  "name": "fc-fe-assignment-10",
+  "version": "1.0.0",
+  "description": "프론트엔드 개발자 되기 온라인 완주반 - Week 10 과제 (2차 평가)",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "axios": "0.21.1",
+    "react": "17.0.1",
+    "react-async": "10.0.1",
+    "react-dom": "17.0.1",
+    "react-redux": "7.2.2",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "4.0.0",
+    "redux": "4.0.5",
+    "redux-saga": "1.1.3",
+    "redux-thunk": "2.3.0"
+  },
+  "devDependencies": {
+    "typescript": "4.1.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

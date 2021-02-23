@@ -7,7 +7,7 @@
 * n이 20살 이상이고 64살 이하이면 "성인",
 * n이 65살 이상이면 "노인",
 * n이 1 이상 120 이하가 아닌 경우 "출력할 수 없습니다"라는 문자열을 출력합니다.
-*/
+*/ 
 
 function printAge(n) {
   let answer = "";
@@ -21,18 +21,7 @@ function printAge(n) {
   } else if (n !== (n >= 1 && n <= 120 ) ) {
     console.log('출력할 수 없습니다')
   } 
-  return answer;
-}
-
-//답
-function printAge(n) {
-  let answer = "";
-  if (n < 1 || n > 120) {
-    answer = "출력할 수 없습니다";
-  } else {
-    answer = n <= 19 ? "미성년자" : n < 65 ? "성인" : "노인";
-  }
-  return answer;
+  return answer; 
 }
 
 console.log(printAge(0)); // 출력할 수 없습니다
@@ -42,3 +31,4 @@ console.log(printAge(64)); // 성인
 console.log(printAge(65)); // 노인
 console.log(printAge(120)); // 노인
 console.log(printAge(121)); // 출력할 수 없습니다
+

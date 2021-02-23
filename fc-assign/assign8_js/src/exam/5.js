@@ -3,7 +3,7 @@
 
 아래의 주석처리된 promise 예제의 동작을 그대로 구현하는 async/await 예제를 만들어주세요.
 코드 작성이라는 주석이 적힌 부분에만 코드를 작성해주시면 됩니다.
-*/
+*/ 
 
 // promise
 // function increaseAndPrint(n) {
@@ -50,22 +50,11 @@ async function makeError() {
 async function increaseAndPrint(n) {
   try {
     let value = await delay(n);
-    console.log(value);
     // 코드 작성
-    value = await delay(value);
-    console.log(value);
-    value = await delay(value);
-    console.log(value);
-    value = await delay(value);
-    console.log(value);
-    value = await delay(value);
-    if (value === 5) {
-      await makeError();
-    }
-    // 코드 끝
+    console.log(value); 
   } catch (e) {
     console.error(e);
   }
 }
 
-increaseAndPrint(0);
+increaseAndPrint(0); 

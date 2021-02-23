@@ -6,15 +6,31 @@
 * for문은 사용하지 않습니다.
 */
 
+// 답 못풀었고 밑에는 100% 선생님 답
 
 
 
+// set 객체
+function uniqSet(array) {
+  const arr = [...new Set(array)];
+  return arr;
+}
 
-function uniqArray(array) {
-  // let answer = [];
-  // 코드 작성
-  return array.filter((value, index) => array.indexOf(value) === index);
-  // return answer;
+console.log(uniqSet([2, 1, 2, 3, 4, 3, 4])); // [ 2, 1, 3, 4 ]
+
+// filter
+function uniqFilter(array) {
+  return array.filter((item, idx) => array.indexOf(item) === idx);
+}
+
+console.log(uniqFilter([2, 1, 2, 3, 4, 3, 4])); // [ 2, 1, 3, 4 ]
+
+// reduce
+function uniqReduce(array) {
+  return array.reduce(
+    (acc, cur, i, arr) => (arr.indexOf(cur) === i ? [...acc, cur] : acc),
+    []
+  );
 }
 
 console.log(uniqArray([2, 1, 2, 3, 4, 3, 4])); // [ 2, 1, 3, 4 ]

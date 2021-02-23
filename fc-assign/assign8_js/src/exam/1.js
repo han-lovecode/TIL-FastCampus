@@ -19,16 +19,7 @@ function waterMelon(n) {
   return answer
 }
 
-// 답
-function waterMelon(n) {
-  let answer = "";
-  for (let i = 0; i < n; i++) {
-    answer += i % 2 ? "박" : "수";
-  }
-  return answer;
-}
-
-
-
 console.log(waterMelon(3)); // 수박수
-console.log(waterMelon(4)); // 수박수박
+console.log(waterMelon(4)); // 수박수박  
+
+
